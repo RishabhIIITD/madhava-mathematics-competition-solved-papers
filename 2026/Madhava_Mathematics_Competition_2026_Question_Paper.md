@@ -69,12 +69,12 @@
    **(C)** converges uniformly on $\mathbb{R}$  
    **(D)** converges only at $0$  
 
-10. If $1, a_1, a_2, \dots, a_{n-1}$ are the $n^{\text{th}}$ ($n \ge 2$) roots of unity, then 
-    $$\frac{1}{1 - a_1} + \frac{1}{1 - a_2} + \dots + \frac{1}{1 - a_{n-1}} =$$
-    **(A)** $\frac{n}{2}$  
-    **(B)** $\frac{n - 1}{2}$  
-    **(C)** $\frac{1}{2}$  
-    **(D)** $\frac{n(n - 1)}{2}$  
+10. If $1, a_1, a_2, \dots, a_{n-1}$ are the $n^{\text{th}}$ ($n \ge 2$) roots of unity, then
+   $$\frac{1}{1 - a_1} + \frac{1}{1 - a_2} + \dots + \frac{1}{1 - a_{n-1}} =$$
+   **(A)** $\frac{n}{2}$  
+   **(B)** $\frac{n - 1}{2}$  
+   **(C)** $\frac{1}{2}$  
+   **(D)** $\frac{n(n - 1)}{2}$  
 
 ---
 
