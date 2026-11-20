@@ -15,18 +15,20 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
 │   ├── Madhava_Mathematics_Competition_2026_Concepts_Masterclass.md
 │   ├── Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf
 │   ├── Madhava_Mathematics_Competition_2026_Detailed_Solutions.md
-│   └── Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf
+│   ├── Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf
+│   ├── Madhava_Mathematics_Competition_2026_Formula_CheatSheet.md
+│   └── Madhava_Mathematics_Competition_2026_Formula_CheatSheet.pdf
 ```
 
 *(More years and papers will be added progressively to build the ultimate reference for aspirants).*
 
 ---
 
-## 📝 Available Papers & Concept Guides
+## 📝 Available Papers & Student Resources
 
-| Year | Exam Date | Total Marks | Detailed Solutions | Concept Masterclass Guide (Theory & Worked Examples) |
-| :---: | :---: | :---: | :---: | :---: |
-| **2026** | 11/01/2026 | 100 | [📖 Markdown](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.md) \| [📄 PDF](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) | [🧠 Theory & Concepts (MD)](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.md) \| [📄 Theory & Concepts (PDF)](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf) |
+| Year | Exam Date | Total Marks | Detailed Solutions | Concept Masterclass Guide (Theory & Worked Examples) | 2-Page Revision Cheat Sheet |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **2026** | 11/01/2026 | 100 | [📖 Markdown](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.md) \| [📄 PDF](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) | [🧠 Theory & Concepts (MD)](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.md) \| [📄 Theory & Concepts (PDF)](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf) | [⚡ Cheat Sheet (MD)](./2026/Madhava_Mathematics_Competition_2026_Formula_CheatSheet.md) \| [📄 Cheat Sheet (PDF)](./2026/Madhava_Mathematics_Competition_2026_Formula_CheatSheet.pdf) |
 
 ---
 
@@ -36,18 +38,22 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
    - Read [`Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf`](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf).
    - Understand the theoretical foundations: $p$-adic valuations, Infinite Descent, Hilbert Matrices, Rouché's Theorem, Commutator Nilpotency, Auxiliary Functions for Rolle's Theorem, and Topological Connectedness.
    - Work through the fresh, independent examples provided in the guide.
-2. **Phase 2 — Attempt the Paper Independently:**
-   - Attempt the 2026 paper under timed 3-hour examination conditions without looking at the solutions.
-3. **Phase 3 — Review Against the Detailed Solutions Guide:**
+2. **Phase 2 — Review & Memorize Key Identities:**
+   - Review [`Madhava_Mathematics_Competition_2026_Formula_CheatSheet.pdf`](./2026/Madhava_Mathematics_Competition_2026_Formula_CheatSheet.pdf).
+   - Memorize the polygon triangle formulas, commutator power identities, and root bounding conditions on a compact 2-page printout.
+3. **Phase 3 — Attempt the Paper Independently:**
+   - Attempt the 2026 paper under timed 3-hour examination conditions.
+4. **Phase 4 — Review Against the Detailed Solutions Guide:**
    - Consult [`Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf`](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) to analyze step-by-step grading rubrics, alternative approaches, and strategic competition tips.
 
 ---
 
-## 💡 Key Highlights of the Concepts Masterclass
+## 💡 Key Highlights of the Resources
 
 - **All Concepts from First Principles:** Covers every single concept required for the 2026 paper in full depth.
 - **Fresh Examples:** Every concept is reinforced with non-trivial worked examples strictly distinct from the exam questions.
-- **Publication-Quality Vector PDFs:** Both documents are typeset using KaTeX math glyphs and professional print CSS styling.
+- **Ultra-Compact 2-Page Cheat Sheet:** High-density, double-sided printable summary with all formulas and Part I answer keys.
+- **Publication-Quality Vector PDFs:** All documents are typeset using KaTeX math glyphs and professional print CSS styling.
 - **Tactical Exam Checklist:** A rapid-lookup table pairing exam problem clues with immediate mathematical techniques.
 
 ---
