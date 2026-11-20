@@ -11,15 +11,17 @@
 Reading a mathematical solution often creates an **illusion of competence**: the proof looks intuitive and obvious in hindsight. Real mastery occurs only when you apply the exact same mathematical principles (such as *Rouché's Theorem*, *p-adic valuations*, *auxiliary Rolle's kernels*, or *infinite descent*) to completely fresh, unseen problems.
 
 ### How to Use This Booklet
-1. **Section A (Problems):** Work through each problem independently with a pen and blank paper. Do not look at the hints until you have spent at least 15–20 minutes attempting the problem.
-2. **Section B (Tiered Hints):** 
+1. **Section A (Problems Only):** Work through each problem independently with a pen and blank paper. Do not look at the hints until you have spent at least 15–20 minutes attempting the problem.
+2. **Section B (Problem + Tiered Hints):** 
+   - Each problem is repeated directly above its hints so you can study the question and hints side-by-side without flipping pages.
    - **Hint 1:** Gives the primary theorem, invariant, or strategic direction.
    - **Hint 2:** Gives the explicit algebraic substitution or critical intermediate milestone.
-3. **Section C (Detailed Solutions):** Read the full solutions to benchmark your rigor, notation, and clarity against examiner expectations.
+3. **Section C (Problem + Full Detailed Solutions):** 
+   - Each problem statement is repeated again right above its full solution, making every proof 100% self-contained for easy revision.
 
 ---
 
-# Section A: The Problem Set
+# Section A: The Problem Set (Questions Only)
 
 ---
 
@@ -136,92 +138,174 @@ $$|PA||PB||PC| < 1$$
 
 ---
 
-# Section B: Tiered Hints
+# Section B: Problem Statements & Tiered Hints
 
 ---
 
-#### Hints for Problem 1
-- **Hint 1:** Express $v = ur$ and $w = ur^2$. Set up $\frac{u + ur + ur^2}{3} = ur + 18$ and clear fractions.
-- **Hint 2:** Factor the relation into $u(r - 1)^2 = 54$. Find all positive square divisors of $54$.
+### Problem 1: Diophantine Progressions
+> **Problem:** Let $u < v < w$ be three positive integers forming a geometric progression whose common ratio $r$ is an integer. If the arithmetic mean of $u, v, w$ exceeds the middle term by $18$, determine all possible values of the first term $u$.
 
-#### Hints for Problem 2
-- **Hint 3:** For (1), choose an edge in $16$ ways, then identify how many vertices are forbidden from being the third vertex to avoid 2 shared edges.
-- **Hint 4:** For (2), use complementary counting $N_0 = \binom{16}{3} - N_1 - N_2$, or apply $N_0 = \frac{n(n-4)(n-5)}{6}$ with $n = 16$.
-
-#### Hints for Problem 3
-- **Hint 1:** Check continuity at $x = 2$ first. Does continuity at $x = 2$ impose any restrictions on $m$ and $c$? Then examine $x = -2$.
-- **Hint 2:** Continuity at $x = -2$ gives $-2m + c = (-2)^3 + 4 = -4 \implies c = 2m - 4$. Express $mc = 2m^2 - 4m$ and complete the square.
-
-#### Hints for Problem 4
-- **Hint 1:** Factor the cubic polynomial $t^3 - 4t^2 - t + 4 = 0$.
-- **Hint 2:** The factors are $(t - 1)(t + 1)(t - 4) = 0$. Use the fact that the continuous image of the connected interval $[0, 4]$ must be connected.
-
-#### Hints for Problem 5
-- **Hint 1:** Differentiate $h(x)$ to check whether $h$ is strictly monotonic on $[-2, \infty)$.
-- **Hint 2:** Since $h'(x) > 0$ for $x > -2$, $h$ is strictly increasing. Use the theorem that $h(x) = h^{-1}(x) \iff h(x) = x$.
-
-#### Hints for Problem 6
-- **Hint 1:** Substitute $u = e^x > 0$. Split into two cases: $u \ge 2$ and $0 < u < 2$.
-- **Hint 2:** In each case, solve the resulting quadratic equation and verify whether the roots lie in the respective domain.
-
-#### Hints for Problem 7
-- **Hint 1:** Summing over odd sizes is $\sum_{k \text{ odd}} \binom{n}{k}$.
-- **Hint 2:** Consider the binomial expansion of $(1 + 1)^n - (1 - 1)^n$.
-
-#### Hints for Problem 8
-- **Hint 1:** A circle tangent to the $x$-axis at the origin has center $(0, b)$ and radius $|b|$. Write its equation: $x^2 + (y - b)^2 = b^2$.
-- **Hint 2:** Differentiate implicitly with respect to $x$ to find $b$ in terms of $x, y, y'$, then substitute $b$ back.
-
-#### Hints for Problem 9
-- **Hint 1:** Apply the AM-GM inequality to the denominator $1 + n^4 x^2$.
-- **Hint 2:** $1 + n^4 x^2 \ge 2\sqrt{n^4 x^2} = 2n^2 |x|$. Bound the numerator using $|\sin| \le 1$ to apply the Weierstrass M-Test.
-
-#### Hints for Problem 10
-- **Hint 1:** Recall the polynomial $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$. Its logarithmic derivative is $\frac{P'(x)}{P(x)} = \sum_{k=1}^{n-1} \frac{1}{x - \zeta_k}$.
-- **Hint 2:** Differentiate $\frac{P'(x)}{P(x)}$ with respect to $x$: $\frac{d}{dx}\left[\frac{P'(x)}{P(x)}\right] = \frac{P''(x)P(x) - [P'(x)]^2}{[P(x)]^2} = -\sum_{k=1}^{n-1} \frac{1}{(x - \zeta_k)^2}$. Compute $P(1), P'(1), P''(1)$ carefully.
-
-#### Hints for Problem 11
-- **Hint 1:** Define the auxiliary function $g(x) = \int_0^x t(t - x)^2 f(t) dt$.
-- **Hint 2:** Verify $g(0) = 0$ and $g(1) = 0$. Differentiate using Leibniz's rule and apply Rolle's Theorem.
-
-#### Hints for Problem 12
-- **Hint 1:** Multiply $P(n)$ by 9 to eliminate $n$ through division by $3n + 1$.
-- **Hint 2:** $9P(n) = (3n + 1)(6n + 13) + 5$. Show that the gcd must divide 5, then check if both 1 and 5 can be achieved.
-
-#### Hints for Problem 13
-- **Hint 1:** Express $\frac{1}{i + j + 1}$ as an integral $\int_0^1 x^{i+j} dx = \int_0^1 x^i x^j dx$.
-- **Hint 2:** Interchange the finite sum and integral to obtain $\int_0^1 \left(\sum c_i x^i\right)^2 dx$. When can the integral of a squared polynomial vanish?
-
-#### Hints for Problem 14
-- **Hint 1:** Let $S = \sum_{i=1}^8 a_i$. The condition implies $S - a_k = 2 A_k$, so $a_k \equiv S \pmod 2$.
-- **Hint 2:** If all $a_i$ are odd, what is the parity of $S$? What is the parity of $S - a_k$? Apply the Method of Infinite Descent.
-
-#### Hints for Problem 15
-- **Hint 1:** Vieta's formulas give $\alpha + \beta = 6$ and $\alpha\beta = 21$. Note $v_3(6) = 1$ and $v_3(21) = 1$.
-- **Hint 2:** Use $a_m = \alpha^{2^m} + \beta^{2^m}$ with $a_{m+1} = a_m^2 - 2(21)^{2^m}$. Use mathematical induction to prove $a_m \equiv 2(21)^{2^{m-1}} \pmod{3^{2^{m-1}+1}}$.
-
-#### Hints for Problem 16
-- **Hint 1:** For (1), compute $f(0)$ and $f(1)$, and check the derivative $f'(x)$ on $(0, 1)$.
-- **Hint 2:** For (2), choose the circle $|z| = R$ with $x_0 < R < 1$. Show that $|z^7 + 1| < |-7z^6|$ on this circle and apply Rouché's Theorem.
-
-#### Hints for Problem 17
-- **Hint 1:** Derive a recurrence for $[A, B^{3 \cdot 2^k}]$ by multiplying on the right by $B^{3 \cdot 2^k}$ and substituting.
-- **Hint 2:** Take matrix norms to find an inequality of the form $2^k \le C$. For part (2), compute $B^3$.
-
-#### Hints for Problem 18
-- **Hint 1:** Place the vertices in the complex plane: $1, e^{i 2\pi/3}, e^{i 4\pi/3}$. Notice $(z - 1)(z - \omega)(z - \omega^2) = z^3 - 1$.
-- **Hint 2:** Apply the Maximum Modulus Principle to $F(z) = z^3 - 1$ on the compact region $\triangle ABC$. Check the value of $|F(w)|$ on the boundary edges.
+* **Hint 1 (Strategic Direction):** Express $v = ur$ and $w = ur^2$. Set up $\frac{u + ur + ur^2}{3} = ur + 18$ and clear fractions.
+* **Hint 2 (Algebraic Trigger):** Factor the relation into $u(r - 1)^2 = 54$. Find all positive square divisors of $54$.
 
 ---
 
-# Section C: Detailed Step-by-Step Solutions
+### Problem 2: Combinatorics on Polygons
+> **Problem:** The 16 vertices of a regular 16-gon are connected in all possible triples to form triangles.  
+> 1. How many such triangles share **exactly one side** with the 16-gon?  
+> 2. How many such triangles share **no sides** with the 16-gon?
+
+* **Hint 1 (Strategic Direction):** For (1), choose an edge in $16$ ways, then identify how many vertices are forbidden from being the third vertex to avoid sharing 2 edges.
+* **Hint 2 (Algebraic Trigger):** For (2), use complementary counting $N_0 = \binom{16}{3} - N_1 - N_2$, or apply the closed-form formula $N_0 = \frac{n(n-4)(n-5)}{6}$ with $n = 16$.
 
 ---
 
-### Solution 1 (Diophantine Progressions)
+### Problem 3: Piecewise Continuity & Optimization
+> **Problem:** Let $g(x) = \begin{cases} mx + c & \text{if } x < -2 \\ x^3 + 4 & \text{if } -2 \le x < 2 \\ 5x + 2 & \text{if } x \ge 2 \end{cases}$. If $g$ is continuous everywhere on $\mathbb{R}$, determine the minimum possible value of $mc$.
+
+* **Hint 1 (Strategic Direction):** Check continuity at $x = 2$ first. Does continuity at $x = 2$ impose any restrictions on $m$ and $c$? Then examine continuity at $x = -2$.
+* **Hint 2 (Algebraic Trigger):** Continuity at $x = -2$ gives $-2m + c = (-2)^3 + 4 = -4 \implies c = 2m - 4$. Express $mc = 2m^2 - 4m$ and complete the square.
+
+---
+
+### Problem 4: Connectedness & Functional Constraints
+> **Problem:** Let $f: [0, 4] \to \mathbb{R}$ be a continuous function such that $(f(x))^3 - 4(f(x))^2 - f(x) + 4 = 0$ for all $x \in [0, 4]$. If $f(1) = 4$, evaluate $\int_0^4 f(x) dx$.
+
+* **Hint 1 (Strategic Direction):** Factor the cubic polynomial $t^3 - 4t^2 - t + 4 = 0$.
+* **Hint 2 (Algebraic Trigger):** The factors are $(t - 1)(t + 1)(t - 4) = 0$. Use the fact that the continuous image of the connected interval $[0, 4]$ must be connected.
+
+---
+
+### Problem 5: Fixed Points & Inverse Functions
+> **Problem:** Let $h(x) = (x + 2)^3 - 2$ defined for $x \ge -2$. Find all real solutions to the equation $h(x) = h^{-1}(x)$.
+
+* **Hint 1 (Strategic Direction):** Differentiate $h(x)$ to check whether $h$ is strictly monotonic on $[-2, \infty)$.
+* **Hint 2 (Algebraic Trigger):** Since $h'(x) > 0$ for $x > -2$, $h$ is strictly increasing. Use the key theorem that $h(x) = h^{-1}(x) \iff h(x) = x$.
+
+---
+
+### Problem 6: Exponential Diophantine Equations
+> **Problem:** Find the number of real solutions to the equation $2 + |e^x - 2| = e^x(e^x - 3)$.
+
+* **Hint 1 (Strategic Direction):** Substitute $u = e^x > 0$. Split into two cases: $u \ge 2$ and $0 < u < 2$.
+* **Hint 2 (Algebraic Trigger):** In each case, solve the resulting quadratic equation and verify whether the roots lie in the respective domain.
+
+---
+
+### Problem 7: Subset Parity & Binomial Coefficients
+> **Problem:** Let $S = \{1, 2, 3, \dots, 2026\}$. Find the number of subsets of $S$ whose cardinality is congruent to $1 \pmod 2$.
+
+* **Hint 1 (Strategic Direction):** Summing over odd sizes corresponds to $\sum_{k \text{ odd}} \binom{n}{k}$.
+* **Hint 2 (Algebraic Trigger):** Consider the binomial expansion of $(1 + 1)^n - (1 - 1)^n$.
+
+---
+
+### Problem 8: Differential Equations of Geometric Families
+> **Problem:** Find the differential equation of the family of all circles tangent to the $x$-axis at the origin $(0, 0)$.
+
+* **Hint 1 (Strategic Direction):** A circle tangent to the $x$-axis at the origin has center $(0, b)$ and radius $|b|$. Write its equation: $x^2 + (y - b)^2 = b^2$.
+* **Hint 2 (Algebraic Trigger):** Differentiate implicitly with respect to $x$ to find $b$ in terms of $x, y, y'$, then substitute $b$ back.
+
+---
+
+### Problem 9: Uniform Convergence of Function Series
+> **Problem:** Prove that the series $\sum_{n=1}^\infty \frac{x \sin(n^2 x)}{1 + n^4 x^2}$ converges uniformly on all of $\mathbb{R}$.
+
+* **Hint 1 (Strategic Direction):** Apply the AM-GM inequality to the denominator $1 + n^4 x^2$.
+* **Hint 2 (Algebraic Trigger):** $1 + n^4 x^2 \ge 2\sqrt{n^4 x^2} = 2n^2 |x|$. Bound the numerator using $|\sin| \le 1$ to apply the Weierstrass M-Test.
+
+---
+
+### Problem 10: Roots of Unity Sums
+> **Problem:** Let $1, \zeta_1, \zeta_2, \dots, \zeta_{n-1}$ be the $n$-th roots of unity for $n \ge 3$. Prove that $\sum_{k=1}^{n-1} \frac{1}{(1 - \zeta_k)^2} = -\frac{(n - 1)(n - 5)}{12}$.
+
+* **Hint 1 (Strategic Direction):** Recall the polynomial $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$. Its logarithmic derivative is $\frac{P'(x)}{P(x)} = \sum_{k=1}^{n-1} \frac{1}{x - \zeta_k}$.
+* **Hint 2 (Algebraic Trigger):** Differentiate $\frac{P'(x)}{P(x)}$ with respect to $x$: $\frac{d}{dx}\left[\frac{P'(x)}{P(x)}\right] = \frac{P''(x)P(x) - [P'(x)]^2}{[P(x)]^2} = -\sum_{k=1}^{n-1} \frac{1}{(x - \zeta_k)^2}$. Compute $P(1), P'(1), P''(1)$ carefully.
+
+---
+
+### Problem 11: Auxiliary Functions for Rolle's Theorem
+> **Problem:** Let $f: [0, 1] \to \mathbb{R}$ be a continuous function such that $\int_0^1 x(1 - x)^2 f(x) dx = 0$. Prove that there exists $c \in (0, 1)$ such that $\int_0^c x^2 f(x) dx = c \int_0^c x f(x) dx$.
+
+* **Hint 1 (Strategic Direction):** Define the auxiliary function $g(x) = \int_0^x t(t - x)^2 f(t) dt$.
+* **Hint 2 (Algebraic Trigger):** Verify $g(0) = 0$ and $g(1) = 0$. Differentiate using Leibniz's rule and apply Rolle's Theorem.
+
+---
+
+### Problem 12: Integer GCD of Polynomials
+> **Problem:** Let $P(n) = 2n^2 + 5n + 2$ and $Q(n) = 3n + 1$. Determine all possible values of $\gcd(P(n), Q(n))$ as $n \in \mathbb{Z}$.
+
+* **Hint 1 (Strategic Direction):** Multiply $P(n)$ by 9 to eliminate $n$ through division by $3n + 1$.
+* **Hint 2 (Algebraic Trigger):** $9P(n) = (3n + 1)(6n + 13) + 5$. Show that the gcd must divide 5, then check if both 1 and 5 can be achieved.
+
+---
+
+### Problem 13: Hilbert Kernel & Quadratic Forms
+> **Problem:** Let $c_1, c_2, \dots, c_n \in \mathbb{R}$. Prove that $\sum_{1 \le i, j \le n} \frac{c_i c_j}{i + j + 1} \ge 0$, and determine when equality holds.
+
+* **Hint 1 (Strategic Direction):** Express $\frac{1}{i + j + 1}$ as an integral $\int_0^1 x^{i+j} dx = \int_0^1 x^i x^j dx$.
+* **Hint 2 (Algebraic Trigger):** Interchange the finite sum and integral to obtain $\int_0^1 \left(\sum c_i x^i\right)^2 dx$. When can the integral of a squared polynomial vanish?
+
+---
+
+### Problem 14: Parity Invariants & Infinite Descent
+> **Problem:** Suppose 8 integers $a_1, a_2, \dots, a_8$ have the property that whenever any one of them is removed, the remaining 7 integers can be split into two subsets with equal sums. Prove that $a_1 = a_2 = \dots = a_8 = 0$.
+
+* **Hint 1 (Strategic Direction):** Let $S = \sum_{i=1}^8 a_i$. The condition implies $S - a_k = 2 A_k$, so $a_k \equiv S \pmod 2$.
+* **Hint 2 (Algebraic Trigger):** If all $a_i$ are odd, what is the parity of $S$? What is the parity of $S - a_k$? Apply the Method of Infinite Descent.
+
+---
+
+### Problem 15: $p$-adic Valuations in Non-linear Recurrences
+> **Problem:** Let $\alpha, \beta$ be the roots of $x^2 - 6x + 21 = 0$. Let $p = 3$.  
+> 1. Find the largest power of $3$ dividing $\alpha^2 + \beta^2$.  
+> 2. Find the largest power of $3$ dividing $\alpha^4 + \beta^4$.  
+> 3. For every integer $m \ge 1$, find the largest power of $3$ dividing $\alpha^{2^m} + \beta^{2^m}$.
+
+* **Hint 1 (Strategic Direction):** Vieta's formulas give $\alpha + \beta = 6$ and $\alpha\beta = 21$. Note $v_3(6) = 1$ and $v_3(21) = 1$.
+* **Hint 2 (Algebraic Trigger):** Use $a_m = \alpha^{2^m} + \beta^{2^m}$ with $a_{m+1} = a_m^2 - 2(21)^{2^m}$. Use mathematical induction to prove $a_m \equiv 2(21)^{2^{m-1}} \pmod{3^{2^{m-1}+1}}$.
+
+---
+
+### Problem 16: Root Localization & Rouché's Theorem
+> **Problem:** Consider the polynomial equation $z^7 - 7z^6 + 1 = 0$.  
+> 1. Prove that it has a unique root $x_0$ in the real interval $(0, 1)$.  
+> 2. Prove that every non-real complex root $z$ satisfies $|z| \le x_0$.
+
+* **Hint 1 (Strategic Direction):** For (1), compute $f(0)$ and $f(1)$, and check the derivative $f'(x)$ on $(0, 1)$.
+* **Hint 2 (Algebraic Trigger):** For (2), choose the circle $|z| = R$ with $x_0 < R < 1$. Show that $|z^7 + 1| < |-7z^6|$ on this circle and apply Rouché's Theorem.
+
+---
+
+### Problem 17: Matrix Commutators & Nilpotency
+> **Problem:** Let $A, B \in M_n(\mathbb{C})$ satisfy $AB^3 - B^3 A = B^2$.  
+> 1. Prove that $B$ must be a nilpotent matrix.  
+> 2. If $B = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$, does there exist an $n \times n$ matrix $A$ satisfying the relation? Justify.
+
+* **Hint 1 (Strategic Direction):** Derive a recurrence for $[A, B^{3 \cdot 2^k}]$ by multiplying on the right by $B^{3 \cdot 2^k}$ and substituting.
+* **Hint 2 (Algebraic Trigger):** Take matrix norms to find an inequality of the form $2^k \le C$. For part (2), compute $B^3$.
+
+---
+
+### Problem 18: Extremal Geometric Products & Maximum Modulus
+> **Problem:** Let $A, B, C$ be the vertices of an equilateral triangle inscribed in the unit circle centered at $O$. Let $P$ be any point in the interior of $\triangle ABC$. Prove that $|PA||PB||PC| < 1$.
+
+* **Hint 1 (Strategic Direction):** Place the vertices in the complex plane: $1, e^{i 2\pi/3}, e^{i 4\pi/3}$. Notice $(z - 1)(z - \omega)(z - \omega^2) = z^3 - 1$.
+* **Hint 2 (Algebraic Trigger):** Apply the Maximum Modulus Principle to $F(z) = z^3 - 1$ on the compact region $\triangle ABC$. Check the value of $|F(w)|$ on the boundary edges.
+
+---
+
+# Section C: Problem Statements & Full Detailed Solutions
+
+---
+
+### Solution 1: Diophantine Progressions
+> **Problem:** Let $u < v < w$ be three positive integers forming a geometric progression whose common ratio $r$ is an integer. If the arithmetic mean of $u, v, w$ exceeds the middle term by $18$, determine all possible values of the first term $u$.
+
+#### **Step-by-Step Proof:**
 Let the terms be $u, v = ur, w = ur^2$ with $r \in \mathbb{Z}, r \ge 2$, and $u \in \mathbb{Z}^+$.
 $$\frac{u + ur + ur^2}{3} = ur + 18$$
-Multiply by 3:
+Multiply both sides by 3:
 $$u(1 + r + r^2) = 3ur + 54 \implies u(r^2 - 2r + 1) = 54 \implies u(r - 1)^2 = 54$$
 Since $u$ and $r$ are positive integers, $(r - 1)^2$ must be a perfect square dividing $54$.  
 The prime factorization of $54$ is $2 \times 3^3$.  
@@ -239,7 +323,12 @@ The positive square divisors of $54$ are $1^2 = 1$ and $3^2 = 9$.
 
 ---
 
-### Solution 2 (Combinatorics on Polygons)
+### Solution 2: Combinatorics on Polygons
+> **Problem:** The 16 vertices of a regular 16-gon are connected in all possible triples to form triangles.  
+> 1. How many such triangles share **exactly one side** with the 16-gon?  
+> 2. How many such triangles share **no sides** with the 16-gon?
+
+#### **Step-by-Step Proof:**
 Let $n = 16$.
 1. **Triangles sharing exactly 1 side:**  
    - Choose 1 edge of the 16-gon: $16$ choices.
@@ -259,7 +348,10 @@ Let $n = 16$.
 
 ---
 
-### Solution 3 (Piecewise Continuity & Optimization)
+### Solution 3: Piecewise Continuity & Optimization
+> **Problem:** Let $g(x) = \begin{cases} mx + c & \text{if } x < -2 \\ x^3 + 4 & \text{if } -2 \le x < 2 \\ 5x + 2 & \text{if } x \ge 2 \end{cases}$. If $g$ is continuous everywhere on $\mathbb{R}$, determine the minimum possible value of $mc$.
+
+#### **Step-by-Step Proof:**
 1. **Continuity at $x = 2$:**  
    $$\lim_{x \to 2^-} g(x) = 2^3 + 4 = 12, \quad \lim_{x \to 2^+} g(x) = 5(2) + 2 = 12$$
    Since both one-sided limits equal $g(2) = 12$, $g$ is automatically continuous at $x = 2$ for all $m, c$.
@@ -280,7 +372,10 @@ Let $n = 16$.
 
 ---
 
-### Solution 4 (Connectedness & Functional Constraints)
+### Solution 4: Connectedness & Functional Constraints
+> **Problem:** Let $f: [0, 4] \to \mathbb{R}$ be a continuous function such that $(f(x))^3 - 4(f(x))^2 - f(x) + 4 = 0$ for all $x \in [0, 4]$. If $f(1) = 4$, evaluate $\int_0^4 f(x) dx$.
+
+#### **Step-by-Step Proof:**
 1. Factor the cubic algebraic condition:
    $$t^3 - 4t^2 - t + 4 = t^2(t - 4) - 1(t - 4) = (t^2 - 1)(t - 4) = (t - 1)(t + 1)(t - 4) = 0$$
 2. Thus, for each $x \in [0, 4]$, $f(x) \in \{-1, 1, 4\}$.
@@ -295,7 +390,10 @@ Let $n = 16$.
 
 ---
 
-### Solution 5 (Fixed Points & Inverse Functions)
+### Solution 5: Fixed Points & Inverse Functions
+> **Problem:** Let $h(x) = (x + 2)^3 - 2$ defined for $x \ge -2$. Find all real solutions to the equation $h(x) = h^{-1}(x)$.
+
+#### **Step-by-Step Proof:**
 1. Differentiate $h(x) = (x + 2)^3 - 2$:
    $$h'(x) = 3(x + 2)^2 \ge 0 \quad \text{for all } x \ge -2$$
    Since $h'(x) > 0$ for $x > -2$, $h$ is strictly increasing on $[-2, \infty)$.
@@ -314,7 +412,10 @@ Let $n = 16$.
 
 ---
 
-### Solution 6 (Exponential Diophantine Equations)
+### Solution 6: Exponential Diophantine Equations
+> **Problem:** Find the number of real solutions to the equation $2 + |e^x - 2| = e^x(e^x - 3)$.
+
+#### **Step-by-Step Proof:**
 Let $u = e^x > 0$. The equation becomes:
 $$2 + |u - 2| = u(u - 3) = u^2 - 3u$$
 
@@ -337,7 +438,10 @@ $$2 + |u - 2| = u(u - 3) = u^2 - 3u$$
 
 ---
 
-### Solution 7 (Subset Parity & Binomial Coefficients)
+### Solution 7: Subset Parity & Binomial Coefficients
+> **Problem:** Let $S = \{1, 2, 3, \dots, 2026\}$. Find the number of subsets of $S$ whose cardinality is congruent to $1 \pmod 2$.
+
+#### **Step-by-Step Proof:**
 Let $|S| = n = 2026$.  
 The number of subsets with odd cardinality is:
 $$N_{\text{odd}} = \sum_{k \text{ odd}} \binom{n}{k} = \binom{n}{1} + \binom{n}{3} + \binom{n}{5} + \dots + \binom{n}{2025}$$
@@ -349,7 +453,10 @@ $$N_{\text{odd}} = \frac{2^n}{2} = 2^{n - 1} = 2^{2025}$$
 
 ---
 
-### Solution 8 (Differential Equations of Geometric Families)
+### Solution 8: Differential Equations of Geometric Families
+> **Problem:** Find the differential equation of the family of all circles tangent to the $x$-axis at the origin $(0, 0)$.
+
+#### **Step-by-Step Proof:**
 1. A circle tangent to the $x$-axis at $(0, 0)$ has center $(0, b)$ and radius $|b|$ ($b \ne 0$).  
    Its equation is:
    $$x^2 + (y - b)^2 = b^2 \implies x^2 + y^2 - 2by = 0 \implies 2b = \frac{x^2 + y^2}{y}$$
@@ -364,7 +471,10 @@ $$N_{\text{odd}} = \frac{2^n}{2} = 2^{n - 1} = 2^{2025}$$
 
 ---
 
-### Solution 9 (Uniform Convergence of Function Series)
+### Solution 9: Uniform Convergence of Function Series
+> **Problem:** Prove that the series $\sum_{n=1}^\infty \frac{x \sin(n^2 x)}{1 + n^4 x^2}$ converges uniformly on all of $\mathbb{R}$.
+
+#### **Step-by-Step Proof:**
 Let $u_n(x) = \frac{x \sin(n^2 x)}{1 + n^4 x^2}$.
 1. Bounding the numerator: $|\sin(n^2 x)| \le 1$ for all $x \in \mathbb{R}$.
 2. For the denominator, apply the AM-GM inequality:
@@ -379,7 +489,10 @@ Let $u_n(x) = \frac{x \sin(n^2 x)}{1 + n^4 x^2}$.
 
 ---
 
-### Solution 10 (Roots of Unity Sums)
+### Solution 10: Roots of Unity Sums
+> **Problem:** Let $1, \zeta_1, \zeta_2, \dots, \zeta_{n-1}$ be the $n$-th roots of unity for $n \ge 3$. Prove that $\sum_{k=1}^{n-1} \frac{1}{(1 - \zeta_k)^2} = -\frac{(n - 1)(n - 5)}{12}$.
+
+#### **Step-by-Step Proof:**
 Let $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$.
 1. Taking the logarithmic derivative:
    $$\frac{P'(x)}{P(x)} = \sum_{k=1}^{n-1} \frac{1}{x - \zeta_k}$$
@@ -398,7 +511,10 @@ Let $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$.
 
 ---
 
-### Solution 11 (Auxiliary Functions for Rolle's Theorem)
+### Solution 11: Auxiliary Functions for Rolle's Theorem
+> **Problem:** Let $f: [0, 1] \to \mathbb{R}$ be a continuous function such that $\int_0^1 x(1 - x)^2 f(x) dx = 0$. Prove that there exists $c \in (0, 1)$ such that $\int_0^c x^2 f(x) dx = c \int_0^c x f(x) dx$.
+
+#### **Step-by-Step Proof:**
 1. Define $g: [0, 1] \to \mathbb{R}$ by:
    $$g(x) = \int_0^x t(t - x)^2 f(t) dt$$
 2. Boundary values:
@@ -414,7 +530,10 @@ Let $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$.
 
 ---
 
-### Solution 12 (Integer GCD of Polynomials)
+### Solution 12: Integer GCD of Polynomials
+> **Problem:** Let $P(n) = 2n^2 + 5n + 2$ and $Q(n) = 3n + 1$. Determine all possible values of $\gcd(P(n), Q(n))$ as $n \in \mathbb{Z}$.
+
+#### **Step-by-Step Proof:**
 1. Multiply $P(n) = 2n^2 + 5n + 2$ by $9$:
    $$9P(n) = 18n^2 + 45n + 18$$
 2. Divide by $Q(n) = 3n + 1$:
@@ -430,7 +549,10 @@ Let $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$.
 
 ---
 
-### Solution 13 (Hilbert Kernel & Quadratic Forms)
+### Solution 13: Hilbert Kernel & Quadratic Forms
+> **Problem:** Let $c_1, c_2, \dots, c_n \in \mathbb{R}$. Prove that $\sum_{1 \le i, j \le n} \frac{c_i c_j}{i + j + 1} \ge 0$, and determine when equality holds.
+
+#### **Step-by-Step Proof:**
 1. Recognize the integral identity for the coefficients:
    $$\frac{1}{i + j + 1} = \int_0^1 x^{i + j} dx = \int_0^1 x^i x^j dx$$
 2. Substitute into the quadratic form:
@@ -443,7 +565,10 @@ Let $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$.
 
 ---
 
-### Solution 14 (Parity Invariants & Infinite Descent)
+### Solution 14: Parity Invariants & Infinite Descent
+> **Problem:** Suppose 8 integers $a_1, a_2, \dots, a_8$ have the property that whenever any one of them is removed, the remaining 7 integers can be split into two subsets with equal sums. Prove that $a_1 = a_2 = \dots = a_8 = 0$.
+
+#### **Step-by-Step Proof:**
 1. Let $S = \sum_{i=1}^8 a_i$. When $a_k$ is removed, the remaining 7 integers partition into two equal sums:
    $$S - a_k = 2 A_k \implies a_k \equiv S \pmod 2 \quad \text{for all } k \in \{1, \dots, 8\}$$
    All 8 integers must have the same parity.
@@ -459,7 +584,13 @@ Let $P(x) = \frac{x^n - 1}{x - 1} = \prod_{k=1}^{n-1} (x - \zeta_k)$.
 
 ---
 
-### Solution 15 ($p$-adic Valuations in Non-linear Recurrences)
+### Solution 15: $p$-adic Valuations in Non-linear Recurrences
+> **Problem:** Let $\alpha, \beta$ be the roots of $x^2 - 6x + 21 = 0$. Let $p = 3$.  
+> 1. Find the largest power of $3$ dividing $\alpha^2 + \beta^2$.  
+> 2. Find the largest power of $3$ dividing $\alpha^4 + \beta^4$.  
+> 3. For every integer $m \ge 1$, find the largest power of $3$ dividing $\alpha^{2^m} + \beta^{2^m}$.
+
+#### **Step-by-Step Proof:**
 Given $x^2 - 6x + 21 = 0$, $\alpha + \beta = 6$, $\alpha\beta = 21$, prime $p = 3$.
 $v_3(6) = 1$, $v_3(21) = 1$, $v_3(2) = 0$.
 Define $a_m = \alpha^{2^m} + \beta^{2^m}$.
@@ -486,7 +617,12 @@ Define $a_m = \alpha^{2^m} + \beta^{2^m}$.
 
 ---
 
-### Solution 16 (Root Localization & Rouché's Theorem)
+### Solution 16: Root Localization & Rouché's Theorem
+> **Problem:** Consider the polynomial equation $z^7 - 7z^6 + 1 = 0$.  
+> 1. Prove that it has a unique root $x_0$ in the real interval $(0, 1)$.  
+> 2. Prove that every non-real complex root $z$ satisfies $|z| \le x_0$.
+
+#### **Step-by-Step Proof:**
 Let $f(z) = z^7 - 7z^6 + 1$.
 1. **Uniqueness in $(0, 1)$:**
    - $f(0) = 1 > 0$, $f(1) = 1 - 7 + 1 = -5 < 0$. By IVT, there is at least one root $x_0 \in (0, 1)$.
@@ -504,7 +640,12 @@ Let $f(z) = z^7 - 7z^6 + 1$.
 
 ---
 
-### Solution 17 (Matrix Commutators & Nilpotency)
+### Solution 17: Matrix Commutators & Nilpotency
+> **Problem:** Let $A, B \in M_n(\mathbb{C})$ satisfy $AB^3 - B^3 A = B^2$.  
+> 1. Prove that $B$ must be a nilpotent matrix.  
+> 2. If $B = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$, does there exist an $n \times n$ matrix $A$ satisfying the relation? Justify.
+
+#### **Step-by-Step Proof:**
 1. **Proof of Nilpotency:**
    Given $[A, B^3] = B^2$. By induction, for all $k \ge 1$:
    $$[A, B^{3 \cdot 2^k}] = 2^k B^{3 \cdot 2^k - 1}$$
@@ -521,7 +662,10 @@ Let $f(z) = z^7 - 7z^6 + 1$.
 
 ---
 
-### Solution 18 (Extremal Geometric Products & Maximum Modulus)
+### Solution 18: Extremal Geometric Products & Maximum Modulus
+> **Problem:** Let $A, B, C$ be the vertices of an equilateral triangle inscribed in the unit circle centered at $O$. Let $P$ be any point in the interior of $\triangle ABC$. Prove that $|PA||PB||PC| < 1$.
+
+#### **Step-by-Step Proof:**
 1. In the complex plane, let the vertices of the equilateral triangle be $1, \omega = e^{i 2\pi/3}, \omega^2 = e^{i 4\pi/3}$.
 2. The distance product from point $P$ represented by $z \in \operatorname{int}(\triangle ABC)$ is:
    $$|PA||PB||PC| = |z - 1||z - \omega||z - \omega^2| = |z^3 - 1|$$
