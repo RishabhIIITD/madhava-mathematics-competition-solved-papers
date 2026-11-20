@@ -1,6 +1,6 @@
 # Madhava Mathematics Competition — Solved Papers & Comprehensive Solutions
 
-Welcome to the **Madhava Mathematics Competition Solved Papers** archive! This repository is dedicated to providing undergraduate students and competitive mathematics aspirants with rigorous, beginner-friendly, and comprehensive step-by-step solutions to past papers of the **Madhava Mathematics Competition**.
+Welcome to the **Madhava Mathematics Competition Solved Papers & Concept Masterclasses** archive! This repository is dedicated to providing undergraduate students and competitive mathematics aspirants with rigorous, beginner-friendly, and comprehensive step-by-step solutions and theoretical masterclasses for the **Madhava Mathematics Competition**.
 
 The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** in collaboration with the Department of Mathematics, S. P. College, Pune, and is funded by the **National Board for Higher Mathematics (NBHM)**.
 
@@ -12,6 +12,8 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
 .
 ├── README.md
 ├── 2026/
+│   ├── Madhava_Mathematics_Competition_2026_Concepts_Masterclass.md
+│   ├── Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf
 │   ├── Madhava_Mathematics_Competition_2026_Detailed_Solutions.md
 │   └── Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf
 ```
@@ -20,21 +22,33 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
 
 ---
 
-## 📝 Available Solutions
+## 📝 Available Papers & Concept Guides
 
-| Year | Exam Date | Total Marks | Detailed Solutions (Markdown) | Printable Solutions (PDF) |
+| Year | Exam Date | Total Marks | Detailed Solutions | Concept Masterclass Guide (Theory & Worked Examples) |
 | :---: | :---: | :---: | :---: | :---: |
-| **2026** | 11/01/2026 | 100 | [📖 2026 Markdown Guide](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.md) | [📄 2026 Solutions PDF](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) |
+| **2026** | 11/01/2026 | 100 | [📖 Markdown](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.md) \| [📄 PDF](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) | [🧠 Theory & Concepts (MD)](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.md) \| [📄 Theory & Concepts (PDF)](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf) |
 
 ---
 
-## 🎯 What Makes These Solutions Unique?
+## 🎯 How to Use These Resources to Score Full Marks
 
-1. **Step-by-Step Clarity:** Every mathematical leap is explained with clear algebraic transitions and justifications.
-2. **Multiple Approaches:** Wherever possible, alternative perspectives (e.g., Complex Analysis via Rouché's Theorem vs. Trigonometric Polar Form, Combinatorial Bijections vs. Binomial expansions) are provided.
-3. **Core Theorems Highlighted:** Concepts like the *Intermediate Value Theorem*, *Weierstrass M-Test*, *Hilbert Matrix*, *Infinite Descent*, *p-adic Valuations*, *Rouché's Theorem*, and the *Maximum Modulus Principle* are thoroughly contextualized.
-4. **Tips & Competition Strategies:** Every solution includes strategic takeaways and heuristics useful for solving similar Olympiad-style undergraduate problems.
-5. **Publication-Quality PDF:** Beautifully styled, KaTeX-typeset, printable PDF version ready for offline study and distribution.
+1. **Phase 1 — Study the Concepts Masterclass:**
+   - Read [`Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf`](./2026/Madhava_Mathematics_Competition_2026_Concepts_Masterclass.pdf).
+   - Understand the theoretical foundations: $p$-adic valuations, Infinite Descent, Hilbert Matrices, Rouché's Theorem, Commutator Nilpotency, Auxiliary Functions for Rolle's Theorem, and Topological Connectedness.
+   - Work through the fresh, independent examples provided in the guide.
+2. **Phase 2 — Attempt the Paper Independently:**
+   - Attempt the 2026 paper under timed 3-hour examination conditions without looking at the solutions.
+3. **Phase 3 — Review Against the Detailed Solutions Guide:**
+   - Consult [`Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf`](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) to analyze step-by-step grading rubrics, alternative approaches, and strategic competition tips.
+
+---
+
+## 💡 Key Highlights of the Concepts Masterclass
+
+- **All Concepts from First Principles:** Covers every single concept required for the 2026 paper in full depth.
+- **Fresh Examples:** Every concept is reinforced with non-trivial worked examples strictly distinct from the exam questions.
+- **Publication-Quality Vector PDFs:** Both documents are typeset using KaTeX math glyphs and professional print CSS styling.
+- **Tactical Exam Checklist:** A rapid-lookup table pairing exam problem clues with immediate mathematical techniques.
 
 ---
 
