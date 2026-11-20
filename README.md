@@ -12,7 +12,8 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
 .
 ├── README.md
 ├── 2026/
-│   └── Madhava_Mathematics_Competition_2026_Detailed_Solutions.md
+│   ├── Madhava_Mathematics_Competition_2026_Detailed_Solutions.md
+│   └── Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf
 ```
 
 *(More years and papers will be added progressively to build the ultimate reference for aspirants).*
@@ -21,9 +22,9 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
 
 ## 📝 Available Solutions
 
-| Year | Exam Date | Total Marks | Detailed Solutions Link |
-| :---: | :---: | :---: | :---: |
-| **2026** | 11/01/2026 | 100 | [2026 Detailed Solutions & Guide](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.md) |
+| Year | Exam Date | Total Marks | Detailed Solutions (Markdown) | Printable Solutions (PDF) |
+| :---: | :---: | :---: | :---: | :---: |
+| **2026** | 11/01/2026 | 100 | [📖 2026 Markdown Guide](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.md) | [📄 2026 Solutions PDF](./2026/Madhava_Mathematics_Competition_2026_Detailed_Solutions.pdf) |
 
 ---
 
@@ -33,6 +34,7 @@ The competition is organized annually by **Bhaskaracharya Pratishthana, Pune** i
 2. **Multiple Approaches:** Wherever possible, alternative perspectives (e.g., Complex Analysis via Rouché's Theorem vs. Trigonometric Polar Form, Combinatorial Bijections vs. Binomial expansions) are provided.
 3. **Core Theorems Highlighted:** Concepts like the *Intermediate Value Theorem*, *Weierstrass M-Test*, *Hilbert Matrix*, *Infinite Descent*, *p-adic Valuations*, *Rouché's Theorem*, and the *Maximum Modulus Principle* are thoroughly contextualized.
 4. **Tips & Competition Strategies:** Every solution includes strategic takeaways and heuristics useful for solving similar Olympiad-style undergraduate problems.
+5. **Publication-Quality PDF:** Beautifully styled, KaTeX-typeset, printable PDF version ready for offline study and distribution.
 
 ---
 
